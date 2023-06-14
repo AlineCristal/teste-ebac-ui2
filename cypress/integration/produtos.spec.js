@@ -3,7 +3,7 @@
 describe('Funcionalidade Página de produtos', () => {
 
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+        cy.visit('produtos')
     });
 
     it('Deve selecionar um produto da lista ', () => {
@@ -15,10 +15,10 @@ describe('Funcionalidade Página de produtos', () => {
             .click()
     });
 
-    it.only('Deve adicionar um produto ao carrinho', () => {
+    it('Deve adicionar um produto ao carrinho', () => {
         var quantidade = 10
         cy.get('[class="product-block grid"]')
-        .contains('Atlas Fitness Tank').click()
+        .contains('Argus All-Weather Tank').click()
         cy.get('.button-variable-item-M').click()
         cy.get('.button-variable-item-Blue').click()
         cy.get('.input-text').clear().type(quantidade)
@@ -28,6 +28,16 @@ describe('Funcionalidade Página de produtos', () => {
         cy.get('.woocommerce-message').should('contain', quantidade + ' × “Atlas Fitness Tank” foram adicionados no seu carrinho')
     });
 
+
+    it('Deve adicionar produtos ao carrinho - Usando comando customizado', () => {
+        cy.addProdutos('Argus All-Weather Tank','M', 'Gray', 1)
+
+    });
+
+    it('Deve adicionar produtos ao carrinho - Usando comando customizado', () => {
+        cy.addProdutos('Ariel Roll Sleeve Sweatshirt','S', 'Purple', 3)
+
+    });
 });
 
 
