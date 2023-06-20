@@ -1,0 +1,45 @@
+[
+{
+"nome": "Anne",
+"sobrenome": "Morais",
+"empresa": "Google",
+"endereco":" Rua Nove de Julho",
+"numero": "637",
+"pais":"Brasil",
+"cidade":"Carapicuíba",
+"estado":"São Paulo",
+"cep":"07692-654",
+"telefone":"1198822-5544",
+"email": "anne@google.com"
+},
+
+{
+    "nome": "Cora",
+    "sobrenome": "Silva",
+    "empresa": "Ifood",
+    "endereco":" Rua Henry Ford",
+    "numero": "222",
+    "pais":"Brasil",
+    "cidade":"Osasco",
+    "estado":"São Paulo",
+    "cep":"06414-000",
+    "telefone":"11997416448",
+    "email": "cora@ifood.com"
+},
+
+{
+    "nome": "Clara",
+    "sobrenome": "Bastos",
+    "empresa": "Mercado Livre",
+    "endereco":"Avenida dos Autonomistas",
+    "numero": "111",
+    "pais":"Brasil",
+    "cidade":"São Paulo",
+    "estado":"São Paulo",
+    "cep":"08877-756",
+    "telefone":"1198384-0076",
+    "email": "clara@teste.com"
+}
+
+
+]
